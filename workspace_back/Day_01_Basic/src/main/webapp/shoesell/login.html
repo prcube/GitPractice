@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    div {
+        border: 1px solid black;
+    }
+
+    .header{
+        text-align: center;
+    }
+
+
+    .container {
+        width: 200px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .lmain {
+        float: left;
+        overflow: hide;
+        width: 70%;
+        height: 50px;
+    }
+
+    .id {height: 50%;}
+    .id>input{
+        padding-top: 5px;
+        width:100%;
+        height:100%;
+    }
+
+    .pw {height: 50%;}
+    .pw>input{
+        padding-top:5px;
+        width:100%;
+        height:100%;
+    }
+
+    .login {
+        height: 50px;
+
+    }
+
+    .button {
+        margin-left: 5px;
+        margin-top: 3px;
+        line-height: 35px;
+    }
+
+    .footer{
+        text-align: center;
+    }
+    .footer:hover{
+        cursor: pointer;
+        background-color: yellowgreen;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            Login
+        </div>
+
+        <div class="lmain">
+            <div class="id">
+                <input type="text" placeholder="ID를 입력하세요">
+            </div>
+
+            <div class="pw">
+                <input type="password" placeholder="PW를 입력하세요">
+            </div>
+
+        </div>
+
+        <div class="login" >
+            <button class="button">
+                Login
+            </button>
+        </div>
+
+        <div class="footer">
+            회원가입 / ID, PW 찾기
+        </div>
+    </div>
+
+</body>
+
+</html>
