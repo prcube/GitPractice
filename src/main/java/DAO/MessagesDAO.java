@@ -11,7 +11,7 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
-import dto.MessagesDTO;
+import DTO.MessagesDTO;
 
 public class MessagesDAO {
 
