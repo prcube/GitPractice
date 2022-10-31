@@ -14,7 +14,7 @@
 		</tr>
 		<tr>
 			<td><a href="inputform.jsp">toInput</a>
-			<td><a href="outputForm.git">toOutput</a>
+			<td><a href="outputForm.jsp">toOutput</a>
 		</tr>
 	</table>
 
