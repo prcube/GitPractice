@@ -11,7 +11,7 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
-import DTO.MessagesDTO;
+import MessageDTO.DTO;
 
 public class MessagesDAO {
 
@@ -45,15 +45,15 @@ public class MessagesDAO {
 		}
 	}
 
-	public List<MessagesDTO> selectAll() throws Exception {
+	public List<DTO> selectAll() throws Exception {
 		String sql = "select * from message";
 		try (Connection con = this.getConnetction();
 				PreparedStatement pstat = con.prepareStatement(sql);
 				ResultSet rs = pstat.executeQuery();) {
 
-			List<MessagesDTO> list = new ArrayList<>();
+			List<DTO> list = new ArrayList<>();
 			while (rs.next()) {
-				MessagesDTO dto = new MessagesDTO();
+				DTO dto = new DTO();
 				dto.setSeq(rs.getInt("seq"));
 				dto.setName(rs.getString("writer"));
 				dto.setMsg(rs.getString("message"));
