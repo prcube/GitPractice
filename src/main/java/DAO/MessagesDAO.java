@@ -75,7 +75,7 @@ public class MessagesDAO {
 		}
 	}
 
-	public int update(MessagesDTO dto) throws Exception {
+	public int update(DTO dto) throws Exception {
 		String sql = "update message set writer=?, message=? where seq = ?";
 		try (Connection con = this.getConnetction(); PreparedStatement pstat = con.prepareStatement(sql);) {
 			pstat.setString(1, dto.getName());
