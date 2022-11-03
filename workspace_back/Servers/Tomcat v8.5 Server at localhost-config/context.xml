@@ -31,9 +31,9 @@
 		name="jdbc/oracle"
 		type="javax.sql.DataSource"
 		driverClassName="oracle.jdbc.driver.OracleDriver"
-		url="jdbc:oracle:thin:@Localhost:1521:xe"
-		username="kh"
-		password="kh"
+		url="jdbc:oracle:thin:@3.34.18.235:1521:xe"
+		username="semi"
+		password="semi"
 		
 	/>
 </Context>
